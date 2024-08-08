@@ -48,7 +48,7 @@ export function AddWorkshop() {
           <Label htmlFor="dropLink">Set workshop token</Label>
           <Input id="dropLink" placeholder="Enter the course drop link" />
         </div>
-          <Button type="submit" className="mt-4">
+          <Button type="submit" className="mt-4 font-semibold">
             Submit
           </Button>
         </form>
