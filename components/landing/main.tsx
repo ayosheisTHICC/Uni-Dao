@@ -33,7 +33,7 @@ export default function main() {
                 className="relative inline-flex items-center justify-center px-8 py-3 text-md font-medium text-white transition-all duration-200 bg-black  border border-white/30 font-pj rounded-xl focus:border-0"
                 role="button"
               >
-                Enroll now!
+                Get started!
               </Link>
             </div>
           </div>
