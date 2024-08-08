@@ -44,6 +44,10 @@ export function AddWorkshop() {
             <Label htmlFor="thumbnail">Thumbnail</Label>
             <Input id="thumbnail" type="file" />
           </div>
+          <div className="space-y-2">
+          <Label htmlFor="dropLink">Set workshop token</Label>
+          <Input id="dropLink" placeholder="Enter the course drop link" />
+        </div>
           <Button type="submit" className="mt-4">
             Submit
           </Button>

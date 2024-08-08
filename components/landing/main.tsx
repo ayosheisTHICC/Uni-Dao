@@ -20,17 +20,22 @@ export default function main() {
             UNI 3.0
           </p>
           <p className="text-white/60 max-w-xl mx-auto my-2 text-sm md:text-xl text-center ">
-          a WEB3 University where Company can offer their authentic course, and user only need 1 DAO token to enter
+            a WEB3 University where Company can offer their authentic course,
+            and user only need 1 DAO token to enter
           </p>
 
           <div className="flex w-full  justify-center mt-3 sm:mt-10 gap-3 sm:gap-5 z-40  ">
-            
-            <Button
-              className="hover:bg-gold hover:text border border-yellow/20"
-              variant={"outline"}
-            >
-              Enroll Now!
-            </Button>
+            <div className="relative inline-flex  group">
+              <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#ecff44] via-[#ab44ff] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <Link
+                href="./cuims"
+                title="Get quote now"
+                className="relative inline-flex items-center justify-center px-8 py-3 text-md font-medium text-white transition-all duration-200 bg-black  border border-white/30 font-pj rounded-xl focus:border-0"
+                role="button"
+              >
+                Enroll now!
+              </Link>
+            </div>
           </div>
         </div>
 
