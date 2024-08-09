@@ -16,55 +16,16 @@ import { cn } from "@/lib/utils";
 import { AddCourse } from "../component/add-course";
 import { AddWorkshop } from "../component/add-workshop";
 import { Analytics } from "../component/analytics";
+import Wallet from "../thirdweb/Wallet"
 
 // Corrected Profile component
 const Profile = () => {
-
-    // const address = useAddress();
-    // const [proposals, setProposals] = useState([]);
-    // const [proposalDescription, setProposalDescription] = useState("");
-    // const { contract: token, isLoading: isTokenLoading } = useContract(
-    //   process.env.NEXT_PUBLIC_TOKEN_ADDRESS
-    // );
-    // const { contract: vote, isLoading: isVoteLoading } = useContract(
-    //   process.env.NEXT_PUBLIC_VOTE_ADDRESS
-    // );
-
-    // const getProposals = async () => {
-    //   if (!address || isVoteLoading) return;
-    //   const data = await vote.getAll();
-    //   setProposals(data);
-    // };
-
-    // const createProposal = async () => {
-    //   await vote.propose(proposalDescription);
-    //   window.location.reload();
-    // };
-
-    // const checkDelegate = async () => {
-    //   if (isTokenLoading || !address) return;
-    //   const delegation = await token.getDelegation();
-    //   if (delegation !== address) {
-    //     await token.delegateTo(address);
-    //     window.location.reload();
-    //   }
-    // };
-
-    // useEffect(() => {
-    //   getProposals();
-    // }, [address, isVoteLoading]);
-
-    // useEffect(() => {
-    //   checkDelegate();
-    // }, [isTokenLoading]);
-
-
 
   return (
     <div className="flex justify-center items-center w-full bg-black">
       <div className="text-white">
         <div className="w-[200px]">
-          <ConnectWallet/>
+          <Wallet/>
           THis is the page
 
         </div>

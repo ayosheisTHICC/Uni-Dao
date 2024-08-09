@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import AnonAdhaar from "@/components/anonAdhaarProvider"
+import { ThirdwebClientProvider } from "@/components/ThirdwebClientProvider";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${poppins.className} dark`}>
+        <ThirdwebClientProvider>
         <AnonAdhaar>
           {children}
         </AnonAdhaar>
+        </ThirdwebClientProvider>
       </body>
     </html>
   );
