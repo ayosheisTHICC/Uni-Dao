@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localfont from "next/font/local"
 import { Poppins } from "next/font/google";
+// import { AnonAadhaarProvider } from "@anon-aadhaar/react";
 import "./globals.css";
 
 
@@ -33,7 +34,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+          {/* <AnonAadhaarProvider  _useTestAadhaar={true}> */}
+
         <body className={inter.className + `${inter.className} ${poppins.className}    dark`}>{children}</body>
+        {/* </AnonAadhaarProvider> */}
+
     </html>
   );
 }

@@ -1,27 +1,13 @@
-import { useTheme } from "next-themes";
+import Ripple from "@/components/magicui/ripple";
+import Link from "next/link";
 
-import { MagicCard } from "@/components/magicui/magic-card";
-
-export default function MagicCardDemo() {
-  const { theme } = useTheme();
+export default function RippleDemo() {
   return (
-    <div
-      className={
-        "flex h-[500px] w-full flex-col gap-4 lg:h-[250px] lg:flex-row"
-      }
-    >
-      <MagicCard
-        className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl"
-        gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
-      >
-        Magic
-      </MagicCard>
-      <MagicCard
-        className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl"
-        gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
-      >
-        Card
-      </MagicCard>
+    <div className="relative flex h-[500px] w-1/2 flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+      <Link href="" className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-white">
+        Join in Web
+      </Link>
+      <Ripple />
     </div>
   );
 }

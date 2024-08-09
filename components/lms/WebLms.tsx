@@ -14,9 +14,9 @@ const ParticlesDemo = () => {
   // }, [theme]);
 
   return (
-    <div className="relative flex h-[500px] w-1/3 flex-col items-center justify-center overflow-hidden rounded-lg border bg-transparent md:shadow-xl">
+    <div className="relative z-10 flex h-[500px] w-1/2 bg-black flex-col items-center justify-center overflow-hidden rounded-lg border  md:shadow-xl">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Particles
+        Experience in VR
       </span>
       <Particles
         className="absolute inset-0"
