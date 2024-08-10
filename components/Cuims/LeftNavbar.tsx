@@ -17,6 +17,8 @@ import { AddCourse } from "../component/add-course";
 import { AddWorkshop } from "../component/add-workshop";
 import { Analytics } from "../component/analytics";
 import Wallet from "../thirdweb/Wallet"
+import Purpose from '@/components/thirdweb/propose'
+import Read from "@/components/thirdweb/ChainRead"
 
 // Corrected Profile component
 const Profile = () => {
@@ -26,9 +28,13 @@ const Profile = () => {
       <div className="text-white">
         <div className="w-[200px]">
           <Wallet/>
-          THis is the page
+          THis 
 
         </div>
+
+        <Purpose/>
+
+        <Read/>
         
         
       </div>
