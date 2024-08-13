@@ -14,9 +14,11 @@ export default function ProposalComponent() {
       const transaction = await prepareContractCall({ 
         contract,
         method: "function propose(address[] targets, uint256[] values, bytes[] calldatas, string description) returns (uint256 proposalId)", 
-        params: [targets, values, calldatas, description] 
+        params: [ dscription] 
+        
       });
       sendTransaction(transaction);
+      
     } catch (err) {
       console.error("Error preparing transaction:", err);
     }
