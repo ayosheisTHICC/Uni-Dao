@@ -37,6 +37,16 @@ import Wallet from '@/components/thirdweb/Wallet'
 import GetPurpose from "@/components/thirdweb/getProposal"
 
 export default function page() {
+  const [wallets, setWallets] = useState(null);
+
+  useEffect(() => {
+    const fetchWalletInfo = async () => {
+      const walletData = await getWalletInfo("io.metamask");
+      setWallets(walletData.image_id)
+    };
+
+    fetchWalletInfo();
+  }, []);
 
   const address = useActiveAccount();
 
