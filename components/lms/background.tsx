@@ -2,7 +2,7 @@
 import React from "react";
 import { Boxes } from "../ui/background-boxes";
 import { cn } from "@/lib/utils";
-import Hmm from '@/components/lms/VrLms'
+import VrLms from '@/components/lms/VrLms'
 import WebLms from "@/components/lms/WebLms"
 
 
@@ -14,7 +14,8 @@ export default function BackgroundBoxesDemo() {
       <Boxes />
 
 <div className="w-[70%]  flex gap-3 justify-center">
-<Hmm/>
+<VrLms/>
+
 <WebLms/>
 </div>
      

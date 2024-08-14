@@ -6,6 +6,7 @@ export const client = createThirdwebClient({
   clientId: "4f4d7aad88cd12953957137f0f7c0081"
  });
 
+//  const customChain = defineChain(1115)
 
 // connect to your contract
 export const contract = getContract({ 

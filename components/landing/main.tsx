@@ -4,6 +4,7 @@ import Particles from "../magicui/particles";
 import Globe from "@/components/landing/globe";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { AnimatedModalDemo } from "./modal";
 
 export default function main() {
   return (
@@ -24,7 +25,7 @@ export default function main() {
             and user only need 1 DAO token to enter
           </p>
 
-          <div className="flex w-full  justify-center mt-3 sm:mt-10 gap-3 sm:gap-5 z-40  ">
+          {/* <div className="flex w-full  justify-center mt-3 sm:mt-10 gap-3 sm:gap-5 z-40  ">
             <div className="relative inline-flex  group">
               <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#ecff44] via-[#ab44ff] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <Link
@@ -34,10 +35,20 @@ export default function main() {
                 role="button"
               >
                 Get started!
+                
               </Link>
             </div>
-          </div>
+
+          </div> */}
+
+          <div>
+
+        <AnimatedModalDemo/>
         </div>
+
+        </div>
+
+
 
         <div className="absolute top-[170%] scale-[4.5] flex justify-center items-center w-full mx-auto z-30">
           <Globe />
