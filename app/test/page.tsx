@@ -30,44 +30,23 @@
 
 "use client"
 import React, { useState, useEffect } from 'react'
-import { WalletInfo, getWalletInfo } from 'thirdweb/wallets'
 import { useActiveAccount } from 'thirdweb/react'
+import Wallet from '@/components/thirdweb/Wallet'
 
 // import Purpose from '@/components/thirdweb/propose'
 import GetPurpose from "@/components/thirdweb/getProposal"
 
 export default function page() {
-  const [wallets, setWallets] = useState(null);
-  const [address, setAddress] = useState(null);
 
-  useEffect(() => {
-    const fetchWalletInfo = async () => {
-      const walletData = await getWalletInfo("io.metamask");
-      setWallets(walletData.image_id);
-    };
+  const address = useActiveAccount();
 
-    fetchWalletInfo();
-  }, []);
+  console.log("so it is not what I am expecting still my hopes are up since I got no hoes", address?.address);
 
-  useEffect(() => {
-    const walletAddress = async () => {
-      const walletInfo = await useActiveAccount();
-      setAddress(walletInfo.address)
-    }
-    walletAddress();
-
-  }, [])
-
-  console.log(address);
-
-  // const info = wallet.json()
-  console.log("the type of" ,typeof(wallet))
-
-  // console.log(info)
 
   return (
     <div>
       <GetPurpose wallets={wallets} />
+      <Wallet/>
     </div>
   );
 }
