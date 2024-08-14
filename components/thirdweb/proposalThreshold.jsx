@@ -35,6 +35,7 @@ export default function Component() {
         value={newProposalThreshold}
         onChange={handleChange}
         placeholder="Enter new proposal threshold"
+        className='text-black'
       />
       <button onClick={onClick}>Submit</button>
     </div>
