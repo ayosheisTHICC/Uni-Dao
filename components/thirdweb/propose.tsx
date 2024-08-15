@@ -14,7 +14,7 @@ export default function ProposalComponent() {
       const transaction = await prepareContractCall({ 
         contract,
         method: "function propose(address[] targets, uint256[] values, bytes[] calldatas, string description) returns (uint256 proposalId)", 
-        params: [["0xf9a38EDE9fd7Cb22B5c89Db79c1ef093b1453Cf0"], [0], ["0x"], description] 
+        params: [["0x466697AD5DC3F5Df95c3EE4309B61E7d06961572"], [0], ["0x"], description] 
         
       });
       sendTransaction(transaction);

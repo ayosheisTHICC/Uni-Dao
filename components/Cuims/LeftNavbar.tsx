@@ -18,8 +18,8 @@ import { AddWorkshop } from "../component/add-workshop";
 import { Analytics } from "../component/analytics";
 import Wallet from "../thirdweb/Wallet"
 import Purpose from '@/components/thirdweb/propose'
-import Read from "@/components/thirdweb/ChainRead"
-import PurposeLimit from "@/components/thirdweb/proposalThreshold"
+import GetProposal from "@/components/thirdweb/getProposal"
+
 
 // Corrected Profile component
 const Profile = () => {
@@ -34,9 +34,10 @@ const Profile = () => {
         </div>
 
         <Purpose/>
-        <PurposeLimit/>
+        <GetProposal/>
+  
 
-        <Read/>
+      
         
         
       </div>
